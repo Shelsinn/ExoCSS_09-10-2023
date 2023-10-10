@@ -5,10 +5,9 @@ body {
 .reserver {
   display: flex;
   flex-direction: column;
-  margin: auto;
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .position {
@@ -25,6 +24,7 @@ body {
 }
 
 button {
+  border-style: none;
   border-radius: 20px;
   padding: 10px;
   margin-bottom: 10px;
@@ -45,8 +45,8 @@ header img {
 }
 
 footer {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 footer ul {
@@ -102,6 +102,10 @@ footer ul {
 }
 
 ol li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-color: #f6f6f6;
   border-radius: 20px;
   padding-top: 0.9rem;
@@ -110,18 +114,20 @@ ol li {
   padding-right: 100px;
   list-style: none;
   height: auto;
-  font-size: 0.7rem;
+  font-size: 0.71rem;
   box-shadow: 0px 3px 10px;
 }
 
-ol p {
+ol .badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -6.8rem;
   background-color: #8e5dd3;
   border-radius: 50px;
   width: 20px;
   height: 20px;
-  text-align: center;
   position: relative;
-  left: 15px;
   color: white;
 }
 
@@ -145,15 +151,32 @@ h2 {
   border-bottom-right-radius: 15px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  width: fit-content;
-  height: fit-content;
+  max-width: 100%;
+  height: 15rem;
   margin: 20px;
   box-shadow: 0px 3px 10px;
 }
 
+.photos1:hover {
+  opacity: 0.5;
+}
+
+.photos2:hover {
+  opacity: 0.5;
+}
+
+.photos3:hover {
+  opacity: 0.5;
+}
+
+.photos4:hover {
+  opacity: 0.5;
+}
+
 .images {
-  width: 30rem;
+  width: 30em;
   height: 10rem;
+  max-width: 100%;
   object-fit: cover;
   justify-content: center;
   border-top-left-radius: 15px;
@@ -168,4 +191,27 @@ h2 {
   flex-wrap: wrap;
   background-color: #f6f6f6;
   margin: 50px;
+}
+
+.heart_icon {
+  width: 2vw;
+  position: relative;
+  left: 27rem;
+  bottom: 4rem;
+}
+
+.new {
+  background-color: lightseagreen;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  position: relative;
+  left: 22rem;
+  bottom: 15rem;
+}
+
+.restoh2 {
+  flex-direction: row;
+  flex-basis: 100%;
+  padding-top: 1rem;
 }
